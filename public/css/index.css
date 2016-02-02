@@ -1,0 +1,80 @@
+.jielun_play {
+    width: 1100px;
+    height: 640px;
+    box-sizing: border-box;
+}
+.jielun_preview {
+    position: relative;
+    float: left;
+    width: 320px;
+    height: 640px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.jielun_preview > a{
+    display: block;
+    position: absolute;
+    top: 105px;
+    font-size: 30px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+.jielun_preview >img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.jielun_wrapper {
+    position: relative;
+    width: 320px;
+    height: 640px;
+    border: 1px solid #000;
+    float: left;
+}
+.jielun_cd {
+    width: 86px;
+    height: 86px;
+    margin: 5px auto;
+}
+.cdimg {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.jielun_title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+}
+.jielun_title > a{
+    color: white;
+    text-decoration: none;
+}
+.jielun_clothes {
+    margin: 0 auto;
+    width: 186px;
+    height: 226px;
+}
+
+.circleround {
+    -webkit-animation: cirleround 36s linear both infinite;
+    animation: cirleround 36s linear both infinite;
+}
+
+@-webkit-keyframes  cirleround {
+    from { 
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,38 @@
+<div class="jielun_play">
+  <div class="jielun_wrapper" style="background-image:url(/local/http://7xk0om.com1.z0.glb.clouddn.com/o_1a9eqomd21qj21rkf8ir1plr15hq7.png)">
+    <div class="jielun_cd" >
+      <img src="/local/http://7xk0om.com1.z0.glb.clouddn.com/cdnav_shijiemori.png" alt="" class="cdimg circleround"></div>
+    <div class="jielun_clothes" >
+      <img src="/local/http://7xk0om.com1.z0.glb.clouddn.com/bc1.jpg" alt="">
+    </div>
+    <h1 class="jielun_title">
+      <a href="/local/http://www.yohobuy.com">玩潮流就上YOHO!</a>
+    </h1>
+  </div>
+  <div class="jielun_preview">
+    <a href="" >这是html2canvas渲染</a>
+    <img src="" alt="" id="imgpreview"/>
+  </div>
+  <div class="jielun_preview">
+    <a href="" >这是webshot渲染</a>
+    <img src="{{webshotimg}}" alt="" />
+  </div>
+</div>
+<script type="text/javascript" src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+<script>
+    $(document).ready(function(){
+     var body= $('.jielun_wrapper')[0];
+     function print(){
+        html2canvas( body ,{
+            onrendered: function(canvas){
+      
+                var html_canvas = canvas.toDataURL();
+                $('#imgpreview').attr('src',html_canvas);
+                
+              
+            }
+        });
+     }  
+     print();
+    })
+</script>
